@@ -58,6 +58,8 @@ spec:
         volumeMounts:
         - mountPath: /var/lib/pgsql/data
           name: data
+        - mountPath: /opt/app-root/configs
+          name: config
       volumes:
       - name: data
         persistentVolumeClaim:
